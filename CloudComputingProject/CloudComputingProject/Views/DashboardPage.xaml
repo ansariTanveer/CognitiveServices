@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CloudComputingProject.Views.DashboardPage" BackgroundColor="#000" Title="Dashboard">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" Padding="20" Spacing="40">
+            <Button Text="Face Detection Operation" BackgroundColor="#24A0ED" Clicked="Button_Clicked" TextColor="#FFF" />
+            <Button Text="OCR Text Detection Operation" BackgroundColor="#C29D4F" Clicked="Button_Clicked_1" TextColor="#FFF" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

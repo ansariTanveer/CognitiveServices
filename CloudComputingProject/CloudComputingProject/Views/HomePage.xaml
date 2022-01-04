@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CloudComputingProject.Views.HomePage" Title="Face Operation">
+    <ContentPage.Content>
+        <ScrollView Padding="20">
+            <StackLayout Orientation="Vertical" VerticalOptions="StartAndExpand">
+                <Image x:Name="imageSelected" Source="defaultImage.png" Aspect="AspectFit" HeightRequest="300"  />
+                <Button Text="Take Picture" BackgroundColor="Green" Clicked="Button_Clicked" TextColor="#FFF" />
+                <Grid ColumnSpacing="20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+
+                    <Label Text="Total Face(s)" FontSize="Medium" HorizontalOptions="StartAndExpand" Grid.Row="0" Grid.Column="0" />
+                    <Label x:Name="totalFaceLbl" FontSize="Medium" HorizontalOptions="StartAndExpand" Grid.Row="0" Grid.Column="1" />
+
+                    <Label Text="Age" FontSize="Medium" HorizontalOptions="StartAndExpand" Grid.Row="1" Grid.Column="0" />
+                    <Label x:Name="ageLbl" FontSize="Medium" HorizontalOptions="StartAndExpand" Grid.Row="1" Grid.Column="1" />
+
+                    <Label Text="Gender" FontSize="Medium" HorizontalOptions="StartAndExpand" Grid.Row="2" Grid.Column="0" />
+                    <Label x:Name="genderLbl" FontSize="Medium" HorizontalOptions="StartAndExpand" Grid.Row="2" Grid.Column="1" />
+
+                    <Label Text="Smile" FontSize="Medium" HorizontalOptions="StartAndExpand" Grid.Row="3" Grid.Column="0" />
+                    <Label x:Name="smileLbl" FontSize="Medium" HorizontalOptions="StartAndExpand" Grid.Row="3" Grid.Column="1" />
+
+                    <Label Text="Facial Hair" FontSize="Medium" HorizontalOptions="StartAndExpand" Grid.Row="4" Grid.Column="0" />
+                    <Label x:Name="facialHairLbl" FontSize="Medium" HorizontalOptions="StartAndExpand" Grid.Row="4" Grid.Column="1" />
+
+                    <Label Text="Glasses" FontSize="Medium" HorizontalOptions="StartAndExpand" Grid.Row="5" Grid.Column="0" />
+                    <Label x:Name="glassLbl" FontSize="Medium" HorizontalOptions="StartAndExpand" Grid.Row="5" Grid.Column="1" />
+
+                    <Label Text="Hair" FontSize="Medium" HorizontalOptions="StartAndExpand" Grid.Row="6" Grid.Column="0" />
+                    <Label x:Name="hairLbl" FontSize="Medium" HorizontalOptions="StartAndExpand" Grid.Row="6" Grid.Column="1" />
+
+                    <Label Text="Emotion" FontSize="Medium" HorizontalOptions="StartAndExpand" Grid.Row="7" Grid.Column="0" />
+                    <Label x:Name="emotionLbl" FontSize="Medium" HorizontalOptions="StartAndExpand" Grid.Row="7" Grid.Column="1" />
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
